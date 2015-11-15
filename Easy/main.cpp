@@ -39,37 +39,17 @@ int main() {
 //
 //    delete []array;
 //    delete []pBeginEnd;
-    SortList sortList;
-    int length =5;
-    ListNode* lPrev = new ListNode(-1);
-    ListNode* lHead;
-    srand(time(NULL));
-    for(int i=0; i<length; i++){
 
-        int iTemp = rand() % length;
-        cout << lPrev->val <<":lPrev" << endl;
-        cout << iTemp << "shit" <<endl;
-        ListNode *lCur =new ListNode(iTemp);
-        if(i == 0){
-            lHead = lCur;
-        }
+//    ListNode* lPrev = new ListNode(-1);
 
-        lPrev->next = lCur;
-        lPrev = lPrev->next;
-    }
+//    ListNode* lTail = new ListNode(3);
+//    ListNode* lTail2 = new ListNode(3,lTail);
+//    ListNode* lTail3 = new ListNode(1, lTail2);
+//    ListNode* lTail4 = new ListNode(2,lTail3);
+//    ListNode* lHead = new ListNode(4,lTail4);
 
-    ListNode* lCur = lHead;
-    while(lCur->next != nullptr){
-        cout << lCur->val << endl;
-        lCur = lCur->next;
-    }
+//    ListNode *lCur = sortList.quickSort(lHead);
 
-    lHead = sortList.quickSort(lHead);
-    lCur = lHead;
-    while(lCur->next != nullptr){
-        cout << lCur->val << endl;
-        lCur = lCur->next;
-    }
     return 0;
 
 
