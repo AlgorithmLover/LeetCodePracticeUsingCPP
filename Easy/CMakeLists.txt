@@ -7,3 +7,5 @@ set(SOURCE_FILES main.cpp NimGame/NimGame.cpp NimGame/NimGame.h WordPattern/Word
 add_executable(Easy ${SOURCE_FILES})
 add_executable(SortList SortList/SortListConstantMemory.cpp SortList/SortListConstantMemory.h SortList/testSortList.cpp)
 add_executable(MissingNumber MissingNumber/MissingNumber.h MissingNumber/MissingNumber.cpp MissingNumber/testBinarySearch.cpp)
+add_executable(FindDuplicateNum DuplicateNumber/testFindDuplicateNum.cpp DuplicateNumber/FindDuplicateNumber.cpp DuplicateNumber/FindDuplicateNumber.h)
+add_executable(TestCal BasicCal/testCal.cpp)
