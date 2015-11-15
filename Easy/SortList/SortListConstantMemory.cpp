@@ -52,13 +52,6 @@ void SortList::listQuickSort(ListNode *pStartPrev, ListNode *pEndNext) {
     listQuickSort(pPivot, pEndNext);
 }
 
-
-
-
-
-
-
-
 ListNode *SortList::mergeSort(ListNode *head) {
     if(head == nullptr ||head->next == nullptr)
         return head;
