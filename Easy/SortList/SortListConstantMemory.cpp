@@ -52,22 +52,23 @@ void SortList::listQuickSort(ListNode *pStartPrev, ListNode *pEndNext) {
     listQuickSort(pPivot, pEndNext);
 }
 
-ListNode* SortList::listMergeSort(ListNode *pHeadBefore, ListNode *pEndNext) {
-    if (pHeadBefore->next->next == pEndNext)
-        return pHeadBefore->next;
-    ListNode *pMiddle = findCenter(pHeadBefore->next, pEndNext);
-    ListNode *pFormerLastNode = listMergeSort(pHeadBefore, pMiddle->next);
-    listMergeSort(pMiddle, pEndNext);
-    ListNode* pLastNode= merge(pHeadBefore, pFormerLastNode, pEndNext);
-    return pLastNode;
+
+
+
+
+
+
+
+ListNode *SortList::mergeSort(ListNode *head) {
+    if(head == nullptr ||head->next == nullptr)
+        return head;
+    return listMergeSort(head);
 }
-
-
-ListNode *SortList::findCenter(ListNode *pStart, ListNode *pEndNext) {
+ListNode *SortList::findCenter(ListNode *pStart) {
     ListNode *pIterator = pStart;
     int i = 0;
     while (true) {
-        if (pIterator == pEndNext)
+        if (pIterator == nullptr)
             break;
         pIterator = pIterator->next;
         i++;
@@ -79,41 +80,41 @@ ListNode *SortList::findCenter(ListNode *pStart, ListNode *pEndNext) {
     }
     return pIterator;
 }
+ListNode *SortList::listMergeSort(ListNode *pHead) {
+    if(pHead->next == nullptr){
+        return pHead;
+    }
+    ListNode* pMiddle = findCenter(pHead);
+    ListNode* pLatterStart = listMergeSort(pMiddle->next);
+    pMiddle->next = nullptr;
+    ListNode* pFormerStart = listMergeSort(pHead);
+    ListNode* pMergeStart= merge(pLatterStart,pFormerStart);
+    return pMergeStart;
+}
 
-ListNode* SortList::merge(ListNode *pStartBefore, ListNode *pMiddle, ListNode *pEndNext) {
-    ListNode *pMergeNode = pStartBefore;
-    ListNode *pFormer = pStartBefore->next;
-    ListNode *pLatter = pMiddle->next;
-    while (pFormer != pMiddle->next && pLatter != pEndNext) {
-        if (pFormer->val < pLatter->val) {
-            pMergeNode->next = pFormer;
-            pFormer = pFormer->next;
+ListNode *SortList::merge(ListNode *pHeadFormer, ListNode *pHeadLatter) {
+    ListNode* pDumbNode = new ListNode(-1);
+    ListNode* pMergeNode = pDumbNode;
+    while(pHeadFormer!= nullptr && pHeadLatter!= nullptr){
+        if(pHeadFormer->val < pHeadLatter->val){
+            pMergeNode->next = pHeadFormer;
+            pHeadFormer = pHeadFormer->next;
         }
-        else {
-            pMergeNode->next = pLatter;
-            pLatter = pLatter->next;
+        else{
+            pMergeNode->next = pHeadLatter;
+            pHeadLatter = pHeadLatter->next;
         }
         pMergeNode = pMergeNode->next;
     }
-    if (pFormer != pMiddle->next) {
-        pMergeNode->next = pFormer;
+    if(pHeadFormer!= nullptr){
+        pMergeNode->next = pHeadFormer;
+    }else if(pHeadLatter!= nullptr){
+        pMergeNode->next = pHeadLatter;
     }
-    else {
-        pMergeNode->next = pLatter;
+    else{
+        pMergeNode->next = nullptr;
     }
-    pMergeNode = pMergeNode->next;
-    //In order to link to latter , in case of loop linked list
-    pMergeNode->next = pEndNext;
-    return pMergeNode;
-}
-
-ListNode *SortList::mergeSort(ListNode *head) {
-    if(head == nullptr || head->next == nullptr)
-        return head;
-    ListNode *pDumb = new ListNode(-1);
-    pDumb->next = head;
-    listMergeSort(pDumb, nullptr);
-    ListNode * pNewHead = pDumb->next;
-    delete  pDumb;
+    ListNode* pNewHead = pDumbNode->next;
+    delete  pDumbNode;
     return pNewHead;
 }
