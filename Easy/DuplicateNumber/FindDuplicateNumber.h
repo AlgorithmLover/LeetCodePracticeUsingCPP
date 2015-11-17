@@ -12,4 +12,5 @@ using namespace std;
 class FindDuplicateNumber{
 public:
     int findDuplicateNaive(vector<int> &nums);
+    int findDuplicateBinarySearch(vector<int> &nums);
 };
