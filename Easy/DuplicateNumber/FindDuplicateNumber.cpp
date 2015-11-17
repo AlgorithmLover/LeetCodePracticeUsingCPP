@@ -47,3 +47,23 @@ int FindDuplicateNumber::findDuplicateBinarySearch(vector<int> &nums) {
     }
     return 0;
 }
+
+
+int FindDuplicateNumber::findDuplicateCyclicList(vector<int> &nums) {
+    if(nums.size() ==0 )
+        return 0;
+    int slow =0;
+    int fast =0;
+    slow = nums[slow];
+    fast = nums[nums[fast]];
+    while(slow != fast){
+        slow = nums[slow];
+        fast = nums[nums[fast]];
+    }
+    fast =0;
+    while (fast != slow){
+        slow = nums[slow];
+        fast = nums[fast];
+    }
+    return  slow;
+}

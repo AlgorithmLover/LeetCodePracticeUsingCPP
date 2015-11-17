@@ -13,4 +13,5 @@ class FindDuplicateNumber{
 public:
     int findDuplicateNaive(vector<int> &nums);
     int findDuplicateBinarySearch(vector<int> &nums);
+    int findDuplicateCyclicList(vector<int> &nums);
 };

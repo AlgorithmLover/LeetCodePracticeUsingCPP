@@ -1,51 +1,7 @@
-2015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
 
 solution 22015 11 17 find duplicate number
 solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
 
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 2 
+solution 2 a little bit tricky use x+y 2x+2y and x+y=ky  x=(k-1)y
 
 
