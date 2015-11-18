@@ -1,7 +1,10 @@
 
-solution 22015 11 17 find duplicate number
-solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
-
-solution 2 a little bit tricky use x+y 2x+2y and x+y=ky  x=(k-1)y
+solution 2015 11 17 find duplicate number
+  solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices.
+  solution 2 a little bit tricky use 
+			slow: x+y 
+			fast: 2x+2y and we can figure out that y<=c
+			x-1 = k*c - y -1 the node before the entrance of the ring 
+			what a genius solution
 
 
