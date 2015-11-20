@@ -10,3 +10,4 @@ add_executable(MissingNumber MissingNumber/MissingNumber.h MissingNumber/Missing
 add_executable(FindDuplicateNum DuplicateNumber/testFindDuplicateNum.cpp DuplicateNumber/FindDuplicateNumber.cpp DuplicateNumber/FindDuplicateNumber.h)
 add_executable(TestCal BasicCal/testCal.cpp)
 add_executable(RangeSumQuery Array/NumArray.cpp Array/NumArray.h Array/testRangeSumQuery.cpp)
+add_executable(LCATree Tree/lowest_common_ancestor.cpp Tree/lowest_common_ancestor.h Tree/test_lca.cpp)
