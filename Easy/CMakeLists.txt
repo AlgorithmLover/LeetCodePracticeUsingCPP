@@ -11,3 +11,4 @@ add_executable(FindDuplicateNum DuplicateNumber/testFindDuplicateNum.cpp Duplica
 add_executable(TestCal BasicCal/testCal.cpp)
 add_executable(RangeSumQuery Array/NumArray.cpp Array/NumArray.h Array/testRangeSumQuery.cpp)
 add_executable(LCATree Tree/lowest_common_ancestor.cpp Tree/lowest_common_ancestor.h Tree/test_lca.cpp)
+add_executable(BinaryTreePath Tree/binary_tree_path.h Tree/test_binary_tree_path.cpp)
