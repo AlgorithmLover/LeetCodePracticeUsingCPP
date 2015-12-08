@@ -9,6 +9,7 @@ add_executable(SortList SortList/SortListConstantMemory.cpp SortList/SortListCon
 add_executable(MissingNumber MissingNumber/MissingNumber.h MissingNumber/MissingNumber.cpp MissingNumber/testBinarySearch.cpp)
 add_executable(FindDuplicateNum DuplicateNumber/testFindDuplicateNum.cpp DuplicateNumber/FindDuplicateNumber.cpp DuplicateNumber/FindDuplicateNumber.h)
 add_executable(TestCal BasicCal/testCal.cpp)
-add_executable(RangeSumQuery Array/NumArray.cpp Array/NumArray.h Array/testRangeSumQuery.cpp)
+add_executable(RangeSumQuery Array/NumArray.cpp Array/NumArray.h Array/testRangeSumQuery.cpp Array/SingleNumber.cpp Array/SingleNumber.h)
 add_executable(LCATree Tree/lowest_common_ancestor.cpp Tree/lowest_common_ancestor.h Tree/test_lca.cpp)
 add_executable(BinaryTreePath Tree/binary_tree_path.h Tree/test_binary_tree_path.cpp)
+add_executable(TestSingleNumber Array/testSingleNumber.cpp Array/SingleNumber.cpp Array/SingleNumber.h)
