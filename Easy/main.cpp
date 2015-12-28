@@ -1,7 +1,7 @@
 #include <iostream>
 #include "NimGame/NimGame.h"
 #include "WordPattern/WordPattern.h"
-#include "SortList/SortListConstantMemory.h"
+#include "148SortList"
 #include <iostream>
 
 using namespace std;
