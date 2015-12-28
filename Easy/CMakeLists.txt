@@ -13,3 +13,4 @@ add_executable(RangeSumQuery Array/NumArray.cpp Array/NumArray.h Array/testRange
 add_executable(LCATree Tree/lowest_common_ancestor.cpp Tree/lowest_common_ancestor.h Tree/test_lca.cpp)
 add_executable(BinaryTreePath Tree/binary_tree_path.h Tree/test_binary_tree_path.cpp)
 add_executable(TestSingleNumber Array/testSingleNumber.cpp Array/SingleNumber.cpp Array/SingleNumber.h)
+add_executable(RemoveDuplicateLetter RemoveDuplicateLetter/TestRemoveDuplicateNumber.cpp)
