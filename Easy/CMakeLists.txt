@@ -14,8 +14,9 @@ add_executable(236LowestCommonAncestorOfABinaryTree 236LowestCommonAncestorOfABi
 add_executable(137SingleNumber2 137SingleNumber2/SingleNumber2.cpp my_header.hpp)
 add_executable(260SingleNumber3 260SingleNumber3/SingleNumber3.cpp my_header.hpp)
 add_executable(136SingleNumber 136SingleNumber/SingleNumber.cpp my_header.hpp)
+add_executable(260MissingNumber 260MissingNumber/MissingNumber.cpp my_header.hpp)
 #add_executable(Easy ${SOURCE_FILES})
-#add_executable(MissingNumber MissingNumber/MissingNumber.h MissingNumber/MissingNumber.cpp MissingNumber/testBinarySearch.cpp)
+#add_executable(260MissingNumber 260MissingNumber/260MissingNumber.h 260MissingNumber/260MissingNumber.cpp 260MissingNumber/testBinarySearch.cpp)
 
 #add_executable(TestCal BasicCal/testCal.cpp)
 #add_executable(LCATree Tree/lowest_common_ancestor.cpp Tree/lowest_common_ancestor.h Tree/test_lca.cpp)
