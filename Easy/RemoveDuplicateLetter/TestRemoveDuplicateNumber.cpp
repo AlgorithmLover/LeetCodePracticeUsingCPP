@@ -1,13 +1,7 @@
 //
 // Created by cheyulin on 12/27/15.
 //
-#include <string>
-#include <sstream>
-#include <set>
-#include <map>
-#include <queue>
-#include <iostream>
-
+#include "../my_header.hpp"
 using namespace std;
 
 class Solution {

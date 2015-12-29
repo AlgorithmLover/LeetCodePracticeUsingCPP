@@ -52,7 +52,7 @@ enum class MethodType {
 
 void test(MethodType method_type){
     Solution solution;
-    vector test_vector = {0,1,3};
+    vector<int> test_vector = {0,1,3};
     if(method_type == MethodType::sort){
         cout << solution.missingNumberOrdered(test_vector) << endl;
     }

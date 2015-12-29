@@ -1,11 +1,10 @@
 //
-// Created by cheyulin on 11/21/15.
+// Created by cheyulin on 12/29/15.
 //
-#include <string>
-#include <vector>
-#include <sstream>
+#include "../my_header.hpp"
 
 using namespace std;
+
 struct TreeNode {
     int val;
     TreeNode *left;
@@ -16,10 +15,10 @@ struct TreeNode {
 
 class Solution {
 public:
-    vector<string> binaryTreePaths(TreeNode* root) {
-        if(root == nullptr)
+    vector<string> binaryTreePaths(TreeNode *root) {
+        if (root == nullptr)
             return vector<string>();
-        if(root->left == nullptr && root->right == nullptr){
+        if (root->left == nullptr && root->right == nullptr) {
             vector<string> ret_vector;
             stringstream string_builder;
             string_builder.clear();
@@ -29,25 +28,41 @@ public:
         }
 
         vector<string> current_path;
-        if(root->left != nullptr){
+        if (root->left != nullptr) {
             vector<string> left_path = binaryTreePaths(root->left);
-            for(string str: left_path){
+            for (string str: left_path) {
                 stringstream string_builder;
                 string_builder.clear();
-                string_builder << root->val <<"->"+str;
+                string_builder << root->val << "->" + str;
                 current_path.push_back(string_builder.str());
             }
         }
 
-        if(root->right!= nullptr){
+        if (root->right != nullptr) {
             vector<string> right_path = binaryTreePaths(root->right);
-            for(string str:right_path){
+            for (string str:right_path) {
                 stringstream string_builder;
                 string_builder.clear();
-                string_builder << root->val <<"->"+str;
+                string_builder << root->val << "->" + str;
                 current_path.push_back(string_builder.str());
             }
         }
-        return  current_path;
+        return current_path;
     }
 };
+
+int main(){
+    TreeNode treeNode1(1);
+    TreeNode treeNode2(2);
+    TreeNode treeNode3(3);
+    treeNode1.left = &treeNode2;
+    treeNode1.right = &treeNode3;
+    TreeNode treeNode4(5);
+    treeNode2.right = & treeNode4;
+
+    Solution solution;
+    vector<string> strings= solution.binaryTreePaths(&treeNode1);
+    for(string str :strings){
+        cout << str << endl;
+    }
+}

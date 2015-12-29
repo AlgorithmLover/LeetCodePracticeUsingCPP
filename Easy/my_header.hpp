@@ -7,10 +7,13 @@
 
 #endif //EASY_MY_HEADER_H
 
+#include <string>
 #include <vector>
 #include <map>
 #include <queue>
 #include <stack>
 #include <iostream>
+#include <sstream>
 
+#include "assert.h"
 #include "stdlib.h"
