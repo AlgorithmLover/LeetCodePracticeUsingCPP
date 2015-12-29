@@ -16,7 +16,7 @@ add_executable(260SingleNumber3 260SingleNumber3/SingleNumber3.cpp my_header.hpp
 add_executable(136SingleNumber 136SingleNumber/SingleNumber.cpp my_header.hpp)
 add_executable(260MissingNumber 260MissingNumber/MissingNumber.cpp my_header.hpp)
 
-#Easy
+#SourceCode
 add_executable(257BinaryTreePaths 257BinaryTreePaths/BinaryTreePaths.cpp my_header.hpp)
 add_executable(299BullsAndCows 299BullsAndCows/BullsAndCows.cpp my_header.hpp)
 add_executable(290WordPattern 290WordPattern/WordPattern.cpp my_header.hpp)
