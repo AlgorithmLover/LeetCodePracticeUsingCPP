@@ -10,6 +10,10 @@ add_executable(287FindTheDuplicateNumber 287FindTheDuplicateNumber/FindDuplicate
 add_executable(307RangeSumQuery 307RangeSumQuery/RangeSumQuery.cpp my_header.hpp)
 add_executable(148SortList 148SortList/SortListConstantMemory.cpp my_header.hpp)
 add_executable(264UglyNumber2 264UglyNumber2/UglyNumber2.cpp my_header.hpp)
+add_executable(236LowestCommonAncestorOfABinaryTree 236LowestCommonAncestorOfABinaryTree/LowestCommonAncestorOfBinaryTree.cpp my_header.hpp)
+add_executable(137SingleNumber2 137SingleNumber2/SingleNumber2.cpp my_header.hpp)
+add_executable(260SingleNumber3 260SingleNumber3/SingleNumber3.cpp my_header.hpp)
+add_executable(136SingleNumber 136SingleNumber/SingleNumber.cpp my_header.hpp)
 #add_executable(Easy ${SOURCE_FILES})
 #add_executable(MissingNumber MissingNumber/MissingNumber.h MissingNumber/MissingNumber.cpp MissingNumber/testBinarySearch.cpp)
 
