@@ -36,4 +36,38 @@
 * time complexity O(sqrt(n))
 
 ## 2015 12 08 single number 1-3 
-* solution use bit operation with cosntant memory 
+* solution use bit operation with cosntant memory
+
+## 2016 01 03 remove duplicate letters
+use greedy and stack (todo : prove that greedy is opt)
+```cpp
+    string removeDuplicateLetters(string
+                                  s) {
+        vector<int> freq(26, 0);
+        vector<int> memo(26, 0);
+        vector<char> stack;
+        for (auto my_char : s) {
+            freq[my_char - 'a']++;
+        }
+        for (auto my_char :s) {
+            if (memo[my_char - 'a'] == 1) {
+                freq[my_char - 'a']--;
+            }
+            else {
+                while (!stack.empty() && my_char < stack.back() && freq[stack.back() - 'a'] > 1) {
+                    memo[stack.back() - 'a'] = 0;
+                    freq[stack.back() - 'a']--;
+                    stack.pop_back();
+                }
+                stack.push_back(my_char);
+                memo[my_char - 'a'] = 1;
+            }
+
+        }
+        stringstream s_stream;
+        for(auto my_char : stack){
+            s_stream << my_char;
+        }
+        return s_stream.str();
+    }
+``` 
