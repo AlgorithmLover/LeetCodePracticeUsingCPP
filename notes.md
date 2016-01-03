@@ -7,6 +7,7 @@
 + slow: x+y 
 + fast: 2x+2y and we can figure out that y<=c 
 + x-1 = k*c - y -1 the node before the entrance of the ring 
+
 ```cpp
   	// With O(n) Time Complexity
     // Refer to the forum
