@@ -1,6 +1,6 @@
 #My Notes By Yche
 
-## 2015 11/17 Find Duplicate Number:
+## 2015 11/17 Find Duplicate Number
 * solution 1 from the perspective of numbers, use binary search on these nums to eliminate impossible choices. 
 * solution 2 a little bit tricky use. 
 
