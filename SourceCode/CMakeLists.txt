@@ -15,6 +15,7 @@ add_executable(137SingleNumber2 137SingleNumber2/SingleNumber2.cpp my_header.hpp
 add_executable(260SingleNumber3 260SingleNumber3/SingleNumber3.cpp my_header.hpp)
 add_executable(136SingleNumber 136SingleNumber/SingleNumber.cpp my_header.hpp)
 add_executable(260MissingNumber 260MissingNumber/MissingNumber.cpp my_header.hpp)
+add_executable(316RemoveDuplicateLetter 316RemoveDuplicateLetter/TestRemoveDuplicateNumber.cpp my_header.hpp)
 
 #SourceCode
 add_executable(257BinaryTreePaths 257BinaryTreePaths/BinaryTreePaths.cpp my_header.hpp)
@@ -27,4 +28,3 @@ add_executable(283MoveZeros 283MoveZeros/MoveZeros.cpp my_header.hpp)
 add_executable(292NimGame 292NimGame/NimGame.cpp my_header.hpp)
 
 #Pending
-add_executable(RemoveDuplicateLetter RemoveDuplicateLetter/TestRemoveDuplicateNumber.cpp my_header.hpp)
