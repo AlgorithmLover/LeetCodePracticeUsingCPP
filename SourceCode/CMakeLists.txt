@@ -28,3 +28,4 @@ add_executable(283MoveZeros 283MoveZeros/MoveZeros.cpp my_header.hpp)
 add_executable(292NimGame 292NimGame/NimGame.cpp my_header.hpp)
 
 #Pending
+add_executable(324WiggleSort2 324WiggleSort2/WiggleSort.cpp my_header.hpp)
