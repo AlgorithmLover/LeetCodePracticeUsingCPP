@@ -23,3 +23,6 @@
 - 290WordPattern
 - 292NimGame
 - 299BullsAndCows
+
+##Pending
+- 324WiggleSort2 (Test by myself is right, but runtime error on leetcode)
