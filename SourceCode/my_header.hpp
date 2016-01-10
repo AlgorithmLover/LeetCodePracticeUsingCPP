@@ -14,6 +14,7 @@
 #include <stack>
 #include <iostream>
 #include <sstream>
+#include <algorithm>
 
 #include "assert.h"
 #include "stdlib.h"
