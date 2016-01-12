@@ -13,6 +13,7 @@
 - 264UglyNumber2
 - 307RangeSumQuery
 - 316RemoveDuplicateLetter
+- 322CoinChange
 
 ##Easy:
 - 231PowerOfTwo
