@@ -26,6 +26,6 @@ add_executable(263UglyNumber 263UglyNumber/UglyNumber.cpp my_header.hpp)
 add_executable(242ValidAnagram 242ValidAnagram/ValidAnagram.cpp my_header.hpp)
 add_executable(283MoveZeros 283MoveZeros/MoveZeros.cpp my_header.hpp)
 add_executable(292NimGame 292NimGame/NimGame.cpp my_header.hpp)
-
+add_executable(322CoinChange 322CoinChange/CoinChange.cpp my_header.hpp)
 #Pending
 add_executable(324WiggleSort2 324WiggleSort2/WiggleSort.cpp my_header.hpp)
