@@ -3,8 +3,10 @@
 //
 
 #include "../my_header.h"
+
 using namespace std;
-class Solution{
+
+class Solution {
 public:
     int singleNumberOne(vector<int> nums) {
         int answer = 0;
@@ -15,11 +17,11 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
-    vector<int> test_vector = {1,1,2,2,3,4,4};
+    vector<int> test_vector = {1, 1, 2, 2, 3, 4, 4};
     int answer = solution.singleNumberOne(test_vector);
-    std::cout << answer<<std::endl;
+    std::cout << answer << std::endl;
 }
 
 

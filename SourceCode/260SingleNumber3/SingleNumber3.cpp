@@ -3,8 +3,10 @@
 //
 
 #include "../my_header.h"
+
 using namespace std;
-class Solution{
+
+class Solution {
 public:
     vector<int> singleNumberThree(vector<int> nums) {
         vector<int> answers;
@@ -39,12 +41,12 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
-    vector<int> test_three ={1, 2, 1, 3, 2, 5};
+    vector<int> test_three = {1, 2, 1, 3, 2, 5};
     vector<int> answers = solution.singleNumberThree(test_three);
-    for(int answer : answers){
-        std::cout << answer<< std::endl;
+    for (int answer : answers) {
+        std::cout << answer << std::endl;
     }
 }
 

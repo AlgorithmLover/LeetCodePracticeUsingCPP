@@ -56,8 +56,8 @@ int main() {
     for (int i = 1; i < 1000; i++) {
         assert(solution.canWinNimObservation(i) == (i % 4 == 0 ? false : true));
         assert(solution.canWinNimVector(i) == (i % 4 == 0 ? false : true));
-        assert(solution.canWinNimNativeArray(i) ==(i % 4 == 0 ? false : true));
-        assert(solution.canWinNimNaive(i) ==(i % 4 == 0 ? false : true));
+        assert(solution.canWinNimNativeArray(i) == (i % 4 == 0 ? false : true));
+        assert(solution.canWinNimNaive(i) == (i % 4 == 0 ? false : true));
     }
 
 }

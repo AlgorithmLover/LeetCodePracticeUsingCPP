@@ -4,7 +4,9 @@
 
 
 #include "../my_header.h"
+
 using namespace std;
+
 class Solution {
 public:
     bool wordPattern(string pattern, string str) {
@@ -42,12 +44,12 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
-    cout << solution.wordPattern("abba","dog cat cat dog") << endl;
-    cout << solution.wordPattern("abba","dog cat cat fish") << endl;
-    cout << solution.wordPattern("aaaa","dog cat cat dog") << endl;
-    cout << solution.wordPattern("abba","dog dog dog dog") << endl;
+    cout << solution.wordPattern("abba", "dog cat cat dog") << endl;
+    cout << solution.wordPattern("abba", "dog cat cat fish") << endl;
+    cout << solution.wordPattern("aaaa", "dog cat cat dog") << endl;
+    cout << solution.wordPattern("abba", "dog dog dog dog") << endl;
 
 }
 

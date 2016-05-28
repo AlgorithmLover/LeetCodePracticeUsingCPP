@@ -2,8 +2,10 @@
 // Created by cheyulin on 12/29/15.
 //
 #include "../my_header.h"
+
 using namespace std;
-class Solution{
+
+class Solution {
 public:
     bool isUgly(int num) {
         if (num <= 0)
@@ -24,7 +26,7 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
     cout << solution.isUgly(6) << endl;
     cout << solution.isUgly(8) << endl;

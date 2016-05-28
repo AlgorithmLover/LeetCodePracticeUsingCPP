@@ -3,8 +3,10 @@
 //
 
 #include "../my_header.h"
+
 using namespace std;
-class Solution{
+
+class Solution {
 public:
     int singleNumberTwo(vector<int> nums) {
         int *bit_indicator = new int[32];
@@ -31,11 +33,13 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
-    vector<int> test_vector = {43, 16, 45, 89, 45, -2147483648, 45, 2147483646, -2147483647, -2147483648, 43, 2147483647, -2147483646, -2147483648, 89, -2147483646, 89, -2147483646, -2147483647, 2147483646, -2147483647, 16, 16, 2147483646, 43};
+    vector<int> test_vector = {43, 16, 45, 89, 45, -2147483648, 45, 2147483646, -2147483647, -2147483648, 43,
+                               2147483647, -2147483646, -2147483648, 89, -2147483646, 89, -2147483646, -2147483647,
+                               2147483646, -2147483647, 16, 16, 2147483646, 43};
     int answer = solution.singleNumberTwo(test_vector);
-    std::cout << answer<<std::endl;
+    std::cout << answer << std::endl;
 }
 
 

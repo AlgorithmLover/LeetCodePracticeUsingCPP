@@ -51,18 +51,18 @@ public:
     }
 };
 
-int main(){
+int main() {
     TreeNode treeNode1(1);
     TreeNode treeNode2(2);
     TreeNode treeNode3(3);
     treeNode1.left = &treeNode2;
     treeNode1.right = &treeNode3;
     TreeNode treeNode4(5);
-    treeNode2.right = & treeNode4;
+    treeNode2.right = &treeNode4;
 
     Solution solution;
-    vector<string> strings= solution.binaryTreePaths(&treeNode1);
-    for(string str :strings){
+    vector<string> strings = solution.binaryTreePaths(&treeNode1);
+    for (string str :strings) {
         cout << str << endl;
     }
 }

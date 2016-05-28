@@ -2,8 +2,10 @@
 // Created by cheyulin on 12/29/15.
 //
 #include "../my_header.h"
+
 using namespace std;
-class Solution{
+
+class Solution {
 public:
     bool isAnagram(string s, string t) {
         if (s.size() == 0 && t.size() == 0) {
@@ -43,7 +45,7 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
     cout << solution.isAnagram("anagram", "nagaram") << endl;
     cout << solution.isAnagram("rat", "car") << endl;

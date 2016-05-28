@@ -2,8 +2,10 @@
 // Created by cheyulin on 12/29/15.
 //
 #include "../my_header.h"
+
 using namespace std;
-class Solution{
+
+class Solution {
 public:
     string BullsAndCows(string secret, string guess) {
         vector<int> secret_count(10);
@@ -31,8 +33,8 @@ public:
     }
 };
 
-int main(){
+int main() {
     Solution solution;
-    cout << solution.BullsAndCows("1807","7810") << endl;
-    cout << solution.BullsAndCows("1123","0111") << endl;
+    cout << solution.BullsAndCows("1807", "7810") << endl;
+    cout << solution.BullsAndCows("1123", "0111") << endl;
 }

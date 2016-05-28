@@ -64,7 +64,7 @@ public:
 
         }
         stringstream s_stream;
-        for(auto my_char : stack){
+        for (auto my_char : stack) {
             s_stream << my_char;
         }
         return s_stream.str();
