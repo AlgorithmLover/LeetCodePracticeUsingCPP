@@ -1,7 +1,7 @@
 //
 // Created by cheyulin on 1/4/16.
 //
-#include "../my_header.hpp"
+#include "../my_header.h"
 
 using namespace std;
 

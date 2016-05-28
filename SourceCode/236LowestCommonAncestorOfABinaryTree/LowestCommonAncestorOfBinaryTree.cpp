@@ -2,7 +2,7 @@
 // Created by cheyulin on 11/19/15.
 //
 
-#include "../my_header.hpp"
+#include "../my_header.h"
 using namespace std;
 enum NodeStatus{
     kNeedLeftExpand =0,

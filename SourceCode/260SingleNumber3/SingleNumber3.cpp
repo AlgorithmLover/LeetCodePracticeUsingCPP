@@ -2,7 +2,7 @@
 // Created by cheyulin on 12/4/15.
 //
 
-#include "../my_header.hpp"
+#include "../my_header.h"
 using namespace std;
 class Solution{
 public:
